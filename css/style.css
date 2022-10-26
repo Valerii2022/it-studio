@@ -50,3 +50,17 @@ body {
     line-height: 1.25;
     text-align: center;
 }
+
+.link {
+    text-decoration: none;
+}
+
+/* header */
+
+.site-nav-list .link {
+    color: var(--white-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+}
