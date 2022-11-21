@@ -39,7 +39,7 @@
       <div class="hero-wrap">
         <p class="hero-uptitle">Передовая IT студия</p>
         <h1 class="hero-title">Мы создаем легкие решения сложных задач и проблем</h1>
-        <button type="button" class="button">Наши проекты</button>
+        <button type="button" class="button" data-modal-open>Наши проекты</button>
       </div>
     </section>
     <!-- services section -->
@@ -97,7 +97,7 @@
             </div>
           </li>
         </ul>
-        <button type="button" class="button">Все услуги</button>
+        <button type="button" class="button" data-modal-open2>Все услуги</button>
       </div>
     </section>
     <!-- about us section -->
@@ -316,33 +316,133 @@
           <li class="item">
             <h2 class="subtitle">Основные ссылки</h2>
             <ul class="link-list">
-              <li class="item"><a href="#" class="link">Главная</a></li>
-              <li class="item"><a href="#" class="link">Наши проекты</a></li>
-              <li class="item"><a href="#" class="link">Наши услуги</a></li>
-              <li class="item"><a href="#" class="link">Контакты</a></li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Главная
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Наши проекты
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Наши услуги
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Контакты
+                </a>
+              </li>
             </ul>
           </li>
           <li class="item">
             <h2 class="subtitle">Наши проекты</h2>
             <ul class="link-list">
-              <li class="item"><a href="#" class="link">РосНано</a></li>
-              <li class="item"><a href="#" class="link">Сколково</a></li>
-              <li class="item"><a href="#" class="link">Проект “Восток”</a></li>
-              <li class="item"><a href="#" class="link">ТЭЦ Калининграда</a></li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  РосНано
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Сколково
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Проект “Восток”
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  ><svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  ТЭЦ Калининграда
+                </a>
+              </li>
             </ul>
           </li>
           <li class="item">
             <h2 class="subtitle">Социальные сети</h2>
             <ul class="link-list">
-              <li class="item"><a href="#" class="link">VK.com</a></li>
-              <li class="item"><a href="#" class="link">Instagram</a></li>
-              <li class="item"><a href="#" class="link">Facebook</a></li>
-              <li class="item"><a href="#" class="link">Twitter</a></li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  VK.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Instagram</a
+                >
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Facebook</a
+                >
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <svg class="footer-arrow" width="10" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                  Twitter</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
         <p class="footer-text text">&#169; 2019. Все права защищены.</p>
       </div>
     </footer>
+    <!-- backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>x</button>
+      </div>
+    </div>
+    <!-- backdrop2 -->
+    <div class="backdrop2 is-hidden2" data-modal2>
+      <div class="modal2">
+        <button class="modal-btn2" type="button" data-modal-close2>x</button>
+      </div>
+    </div>
+    <!-- backdrop script -->
+    <script src="./js/modal.js"></script>
+    <!-- second backdrop -->
+    <script src="./js/modal2.js"></script>
   </body>
 </html>
