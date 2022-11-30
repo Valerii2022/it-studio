@@ -242,7 +242,7 @@
       <p class="descr">Полезные статьи, акции, новости - получите все это сейчас!</p>
       <form class="form" autocomplete="off">
         <label for="email-input"></label>
-        <input type="email" placeholder="Ваш e-mail" name="email" class="mail-input" id="email-input" />
+        <input type="email" placeholder="Ваш e-mail" name="email" class="mail-input" id="email-input" required />
         <button type="submit" class="button">Подписаться</button>
       </form>
       <p class="join-us-text">Мы не шлем спам, и передаем никому ваши данные.</p>
@@ -391,8 +391,11 @@
   <!-- backdrop -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close>x</button>
+      <button class="modal__btn" type="button" data-modal-close>x</button>
     </div>
+    <form class="modal__form">
+
+    </form>
   </div>
   <!-- backdrop2 -->
   <div class="backdrop2 is-hidden2" data-modal2>

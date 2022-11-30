@@ -625,7 +625,7 @@ p {
   background-color: var(--white-color);
 }
 
-.modal-btn {
+.modal__btn {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -641,6 +641,8 @@ p {
   color: var(--primary-text-color);
   background-color: var(--white-color);
 }
+
+
 
 /* ------------------------------------------backdrop2 */
 
